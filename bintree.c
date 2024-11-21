@@ -77,3 +77,21 @@ void updateTreeBFs(t_tree t)
     updateNodeBF(t.root);
     return;
 }
+
+int IsAVL(t_tree t)
+{
+    updateTreeBFs(t);
+
+    int isNodeBalanced(p_node node)
+    {
+        if (node == NULL) {
+            return 1;
+        }
+        if (node->BF < -1 || node->BF > 1) {
+            return 0;
+        }
+        return isNodeBalanced(node->left) && isNodeBalanced(node->right);
+    }
+
+    return isNodeBalanced(t.root);
+}

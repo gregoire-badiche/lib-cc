@@ -23,4 +23,5 @@ void updateTreeHeights(t_tree);
 
 void updateTreeBFs(t_tree);
 
+int IsAVL(t_tree t);
 #endif
