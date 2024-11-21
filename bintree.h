@@ -9,6 +9,8 @@ typedef struct s_tree
     p_node root;
 } t_tree, *p_tree;
 
+t_tree createEmptyTree();
+////
 void BFVisit(t_tree);
 
 int isBST(t_tree); 
@@ -17,11 +19,11 @@ void insertBST(t_tree *, int);
 
 t_tree createAVL(int*, int);
 
-t_tree createEmptyTree();
-
 void updateTreeHeights(t_tree);
 
 void updateTreeBFs(t_tree);
 
-int IsAVL(t_tree t);
+int isNodeBalanced(p_node node);
+
+int isAVL(t_tree t);
 #endif
