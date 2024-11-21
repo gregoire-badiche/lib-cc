@@ -61,3 +61,7 @@ int top(t_stack stack)
     assert(stack.nbElts > 0);
     return stack.values[stack.nbElts - 1];
 }
+
+int isEmpty(t_stack stack) {
+    return stack.nbElts == 0;
+}

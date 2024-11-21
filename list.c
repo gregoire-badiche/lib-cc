@@ -3,6 +3,19 @@
 #include "cell.h"
 #include "list.h"
 
+t_std_list createEmptyList() {
+    t_std_list list;
+    list.head = NULL;
+    return list;
+}
+
+t_ht_list createEmptyHtList() {
+    t_ht_list list;
+    list.head = NULL;
+    list.tail = NULL;
+    return list;
+}
+
 int isEmptyStdList(t_std_list list) {
     if(list.head == NULL) {
         return 1;
@@ -75,4 +88,12 @@ void addTailHt(t_ht_list * list, int val) {
         list->tail->next = cell;
     }
     list->tail = cell;
+}
+
+void displayHtList(t_ht_list list) {
+    p_cell current = list.head;
+    while (current != NULL) {
+        displayCell(*current);
+        current = current->next;
+    }
 }

@@ -1,7 +1,3 @@
-//
-// Created by flasque on 16/06/2022.
-//
-
 #ifndef UNTITLED_CELL_H
 #define UNTITLED_CELL_H
 
@@ -13,18 +9,9 @@ struct s_cell
 
 typedef struct s_cell t_cell, *p_cell;
 
-/***
- * @brief display a t_cell struct
- * @param t_cell : cell to display
- * @return : void
- */
+p_cell createCell(int);
+////
 void displayCell(t_cell);
 
-/***
- * @brief create a cell, and return a pointer to
- * @param int value
- * @return pointer to cell, whit a value, and next is NULL
- */
-p_cell createCell(int);
 
 #endif //UNTITLED_CELL_H

@@ -1,7 +1,3 @@
-//
-// Created by flasque on 26/06/2022.
-//
-
 #ifndef UNTITLED_NODE_H
 #define UNTITLED_NODE_H
 
@@ -15,13 +11,8 @@ struct s_node
 
 typedef struct s_node t_node, *p_node;
 
-/***
- * @brief
- * @param
- * @return
- */
 p_node createNode(int);
-
+////
 p_node createNodeAVL(int *, int, int);
 
 void updateNodeHeight(p_node);
