@@ -28,4 +28,6 @@ void updateNodeHeight(p_node);
 
 void updateNodeBF(p_node pn);
 
+int isNodeBST(p_node node);
+
 #endif //UNTITLED_NODE_H
