@@ -1,0 +1,31 @@
+//
+// Created by flasque on 26/06/2022.
+//
+
+#ifndef UNTITLED_NODE_H
+#define UNTITLED_NODE_H
+
+struct s_node
+{
+    int value;
+    struct s_node   *left, *right;
+    int depth;
+    int BF;
+};
+
+typedef struct s_node t_node, *p_node;
+
+/***
+ * @brief
+ * @param
+ * @return
+ */
+p_node createNode(int);
+
+p_node createNodeAVL(int *, int, int);
+
+void updateNodeHeight(p_node);
+
+void updateNodeBF(p_node pn);
+
+#endif //UNTITLED_NODE_H
